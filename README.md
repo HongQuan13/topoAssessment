@@ -16,6 +16,9 @@ The app also includes a **frontend** built with **Streamlit** for easy visualiza
 - **Data Visualization**: Streamlit frontend provides visualizations (bar charts, line graphs, and tables) for the cleaned data.
 - **Sorting and Filtering**: Interactive features to sort and filter the data on the frontend.
 
+## Demo video
+https://drive.google.com/file/d/1dAcgrsPtEEiuGpT_IAIUABImqyPdiv5B/view?usp=sharing
+
 ## Setup Instructions
 
 Follow the steps below to run the project locally.
@@ -36,13 +39,33 @@ If you're cloning from GitHub:
 git clone https://github.com/HongQuan13/topoAssessment.git
 cd topoAssessment
 ```
+### 2. Create and Activate a Virtual Environment
+Create a new virtual environment in your project directory (you can name it env, or any other name):
 
-### 2. Install Dependencies
+#### For Windows:
+```bash
+python -m venv env
+```
+#### For macOS/Linux:
+```bash
+python3 -m venv env
+```
+After creating the virtual environment, activate it:
+
+#### For Windows:
+```bash
+.\env\Scripts\activate
+```
+#### For macOS/Linux:
+```bash
+source env/bin/activate
+```
+### 3. Install Dependencies
 Install the backend dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-### 3. Run the Application
+### 4. Run the Application
 #### Backend
 Navigate to the src directory and running backend:
 ```bash
@@ -58,7 +81,7 @@ streamlit run main.py
 ```
 This will start the frontend on http://localhost:8501.Feel free access this to interact with the data
 
-### API Endpoints
+### 5. API Endpoints
 1. GET /api/data
 This endpoint returns the full unified dataset in JSON format.
 
@@ -78,7 +101,7 @@ GET http://127.0.0.1:8000/api/data/csv
 Response
 The response will be a JSON object, with keys for each file type (csv, excel, json, etc.) and their corresponding cleaned data.
 
-### Testing Instructions
+### 6. Testing Instructions
 1. Run Unit Tests
 To run the unit tests with pytest from root project directory(topoAssessment):
 
@@ -87,9 +110,6 @@ pytest
 ```
 This will run all the unit tests for the API endpoints.
 
-### Demo video
-
-https://drive.google.com/file/d/1dAcgrsPtEEiuGpT_IAIUABImqyPdiv5B/view?usp=sharing
 
 
 
