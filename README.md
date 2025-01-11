@@ -111,6 +111,10 @@ pytest
 ```
 This will run all the unit tests for the API endpoints.
 
-
+### Challenges:
+- **Inconsistent File Content**: Each data file type (CSV, Excel, PDF, PPTX) can have inconsistent structures, making it difficult to standardize data across sources. For instance:
+  - **PPTX Files**: PPTX files can contain both structured table data and unstructured text, making it difficult to separate useful content. Additionally, text on slides might not always follow a clear pattern, which complicates the extraction process and visualization.
+  
+  - **Unprocessed Data**: Due to the above challenges, there are sections of text data in **PPTX** files that haven't been fully processed or visualized yet. Some of the extracted text might require additional processing to clean up or format for better analysis and visualization.
 
 
