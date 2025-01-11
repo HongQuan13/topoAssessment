@@ -75,11 +75,12 @@ uvicorn main:app --reload
 This will start the backend API on http://127.0.0.1:8000.
 
 #### Frontend
-In another terminal window, navigate to the project root directory(topoAssessment) and run the Streamlit app:
+In another terminal window and run the Streamlit app:
 ```bash
+cd src 
 streamlit run main.py
 ```
-This will start the frontend on http://localhost:8501.Feel free access this to interact with the data
+This will start the frontend on http://localhost:8501. Feel free access this to interact with the data
 
 ### 5. API Endpoints
 1. GET /api/data
